@@ -1,0 +1,15 @@
+<div class="character-list">
+  <h1 class="character-list__title">Character List</h1>
+  <button class="character-list__create-button" routerLink="/characters/new">Create New Character</button>
+  <div class="character-list__items">
+    <div *ngFor="let character of characters" class="character-list__item">
+      <img [src]="character.image" alt="{{ character.name }}" class="character-list__item-image"/>
+      <div class="character-list__item-details">
+        <h2 class="character-list__item-name">{{ character.name }}</h2>
+        <p class="character-list__item-status">Status: {{ character.status }}</p>
+        <p class="character-list__item-species">Species: {{ character.species }}</p>
+        <button class="character-list__edit-button" [routerLink]="['/characters/edit', character.id]">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>

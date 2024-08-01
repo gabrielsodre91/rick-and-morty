@@ -1,0 +1,31 @@
+<!-- src/app/components/character-form/character-form.component.html -->
+<div class="character-form">
+  <h1 class="character-form__title">{{ characterId ? 'Edit Character' : 'Create Character' }}</h1>
+  <form [formGroup]="characterForm" (ngSubmit)="onSubmit()" class="character-form__form">
+    <div class="character-form__field">
+      <label for="name" class="character-form__label">Name</label>
+      <input id="name" formControlName="name" class="character-form__input"/>
+    </div>
+    <div class="character-form__field">
+      <label for="status" class="character-form__label">Status</label>
+      <input id="status" formControlName="status" class="character-form__input"/>
+    </div>
+    <div class="character-form__field">
+      <label for="species" class="character-form__label">Species</label>
+      <input id="species" formControlName="species" class="character-form__input"/>
+    </div>
+    <div class="character-form__field">
+      <label for="type" class="character-form__label">Type</label>
+      <input id="type" formControlName="type" class="character-form__input"/>
+    </div>
+    <div class="character-form__field">
+      <label for="gender" class="character-form__label">Gender</label>
+      <input id="gender" formControlName="gender" class="character-form__input"/>
+    </div>
+    <div class="character-form__field">
+      <label for="image" class="character-form__label">Image URL</label>
+      <input id="image" formControlName="image" class="character-form__input"/>
+    </div>
+    <button type="submit" class="character-form__submit-button">{{ characterId ? 'Update' : 'Create' }}</button>
+  </form>
+</div>

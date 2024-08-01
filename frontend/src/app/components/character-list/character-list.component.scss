@@ -1,0 +1,83 @@
+.character-list {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.character-list__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.character-list__create-button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.character-list__create-button:hover {
+  background-color: #0056b3;
+}
+
+.character-list__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.character-list__item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.character-list__item-image {
+  width: 100%;
+  height: auto;
+}
+
+.character-list__item-details {
+  padding: 10px;
+}
+
+.character-list__item-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.character-list__item-status,
+.character-list__item-species {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.character-list__edit-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.character-list__edit-button:hover {
+  background-color: #218838;
+}
