@@ -10,11 +10,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { RickAndMortyService } from '../../services/rick-and-morty.service';
 import { Character } from '../../interfaces/character';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-character-form',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, HttpClientModule],
+  imports: [CommonModule, ReactiveFormsModule, HttpClientModule, MatProgressSpinnerModule],
   templateUrl: './character-form.component.html',
   styleUrls: ['./character-form.component.scss'],
 })

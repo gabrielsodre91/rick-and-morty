@@ -29,3 +29,8 @@
     <button type="submit" class="character-form__submit-button">{{ characterId ? 'Update' : 'Create' }}</button>
   </form>
 </div>
+<ng-template #loadingTemplate>
+  <div class="character-form__spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>
