@@ -21,7 +21,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 })
 export class CharacterFormComponent implements OnInit {
   characterForm: FormGroup;
-  characterId: number | null = null;
+  characterId: string | null = null;
 
   constructor(
     private fb: FormBuilder,
@@ -43,7 +43,7 @@ export class CharacterFormComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       const id = params.get('id');
       if (id) {
-        this.characterId = +id;
+        this.characterId = id;
         this.rickAndMortyService
           .getCharacter(this.characterId)
           .subscribe((character: Character) => {
